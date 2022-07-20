@@ -33,7 +33,7 @@
             var counter = 0;
             for (int i = 0; i < count; i++)
             {
-                if (flights[i]._from != from1) // tutaj form1 powinno znowu być ALT !!!
+                else if (flights[i]._from != from1) // tutaj form1 powinno znowu być ALT !!!
                 {
                     counter++;
                     // koniec galezi
@@ -61,8 +61,9 @@
 
                     SearchBranch(flights.Count, from1, flights, i);
 
-                    from1 = _fromTmp[_fromTmp.Count - 1]; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! moze, zeby skakalo tylko jeden do gory?
+                    from1 = _fromTmp[0]; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! moze, zeby skakalo tylko jeden do gory?
                     flights = _flightsTmp.GetRange(0, _flightsTmp.Count);
+                    i = -1;
                 }
                 
             }
