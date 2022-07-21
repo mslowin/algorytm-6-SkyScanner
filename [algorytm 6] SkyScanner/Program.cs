@@ -25,7 +25,7 @@ namespace _algorytm_6__SkyScanner
         public static List<int> _allStopOvers = new();
 
         /// <summary>
-        /// 
+        /// List of strings showing how the routes go.
         /// </summary>
         public static List<string> _routes = new();
 
